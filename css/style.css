@@ -231,6 +231,76 @@ a{
     margin-left: 20px; */
 }
 
+/* Contacto */
+.contacto {
+    background-image: url('../images/contacto.JPG');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    /* height: 1000px;
+    max-height: 100%; */
+    /* width: 100%; */
+}
+
+.form-card {
+    background: rgba(243, 240, 215, 0.7);
+    border-radius: 110px;
+    /* position: absolute; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 60px 70px;
+    margin-bottom: 200px;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card form label {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.form-card form input {
+    /* height: 50px; */
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 26px;
+}
+
+.form-card form textarea {
+    min-height: 150px;
+    max-height: 300px;
+    max-width: 100%;
+    padding: 14px;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit {
+    align-self: flex-start;
+    margin-top: 50px;
+    background-color: var(--color-1);
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 24px 54px;
+    transition: background-color 0.2s ease;
+}
+
+#submit:hover{
+    background-color: var(--color-2);
+    cursor: pointer;
+}
+
 /* GENERAL */
 button {
     background-color: var(--color-1);
@@ -256,6 +326,9 @@ button:hover{
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
+    /* position: relative; */
+    padding-bottom: 6px;
+    /* border-bottom: 5px solid var(--color-1); */
 }
 
 .texto {
@@ -263,4 +336,5 @@ button:hover{
     font-weight: 400;
     line-height: 50px;
 }
+
 
