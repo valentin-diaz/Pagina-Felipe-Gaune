@@ -15,6 +15,7 @@
 body {
     font-family: 'KoHo', sans-serif;
     color: #000;
+    position: relative;
 }
 
 .mx1 {
@@ -29,8 +30,9 @@ body {
     color: #fff;
     width: 100%;
     height: 110px;
-    /* position: fixed; */
+    position: fixed;
     transition: background-color 0.2s ease;
+    z-index: 1;
 }
 
 .navbar:hover {
@@ -84,3 +86,88 @@ nav li:hover{
 a{
     text-decoration: none;
 }
+
+/* Hero section */
+.hero-image {
+    position: relative;
+    background: linear-gradient(rgba(240, 233, 210, 0.5), rgba(240, 233, 210, 0.5)), url('../images/hero.JPG');
+    background-position: 0 -250px;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#hero-section {  
+    /* background-color: black; */
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+}
+
+.space {
+    height: 1000px;
+}
+
+.container-hero {
+    top: 110px;
+    position: absolute;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 3fr 2fr;
+    /* grid-template-rows: 1fr 1fr; */
+    border: 1px solid black;
+    z-index: 1;
+}
+
+.container-hero p {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 50px;
+    border: 1px dashed blue;
+    margin-top: 100px;
+    margin-right: 200px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.container-hero h1 {
+    border: 1px dashed red;
+    text-align: right;
+    font-size: 81px;
+    font-style: italic;
+    font-weight: 700;
+    margin-left: 15px;
+    color: white;
+    z-index: 10;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.container-hero button {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.btn-container {
+    display: flex;
+    margin-right: 200px;
+    justify-content: center;
+    height: 100px;
+    align-items: flex-end;
+}
+
+.shadow-container {
+    position: absolute;
+    border: 2px solid blue;
+    top: 0;
+    right: 0;
+    height: inherit;
+    min-width: 550px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.37) 82.81%, rgba(0, 0, 0, 0) 100%);
+    margin: 0;
+    z-index: 1;
+}
+
