@@ -23,6 +23,11 @@ body {
     /* border: 1px solid black; */
 }
 
+.py1 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
 
 /* Navbar */
 .navbar {
@@ -96,7 +101,7 @@ a{
     background-size: cover;
     width: 100%;
     height: 700px;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     z-index: -10;
 
 }
@@ -150,6 +155,7 @@ a{
 }
 
 .container-hero button {
+    background: rgba(94, 69, 75, 0.4);
     grid-column: 1;
     grid-row: 2;
 }
@@ -158,7 +164,7 @@ a{
     background-color: var(--color-3);
 }
 
-.btn-container {
+.hero-btn-container {
     display: flex;
     margin-right: 200px;
     justify-content: center;
@@ -181,15 +187,53 @@ a{
 /* Novedades - Galería */
 #news {
     width: 100%;
-    height: 8000px;
-    border: 5px solid blue;
-    z-index: 10000;
+    /* height: 800px; */
+    background-color: var(--color-2);
+    background-size: cover;
+    background-repeat: repeat;
+    border: none;
+    z-index: 10;
 
+}
+
+.news-container {
+    /* border: 1px dashed black; */
+    display: grid;
+    grid-template-columns: 5fr 6fr 5fr;
+    grid-gap: 60px;
+}
+
+.news-container button:hover {
+    background-color: var(--color-3);
+}
+
+.news-btn-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    /* justify-content: space-between; */
+    /* border: 1px solid red; */
+}
+
+.imagen-central {
+    background-image: url('../images/central.JPG');
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    /* margin-right: 50px;
+    margin-left: 20px; */
 }
 
 /* GENERAL */
 button {
-    background: rgba(94, 69, 75, 0.4);
+    background-color: var(--color-1);
     border-radius: 10px;
     border: none;
     color: #fff;
@@ -197,5 +241,26 @@ button {
     font-size: 22px;
     padding: 24px 54px;
     transition: background-color 0.2s ease;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.texto {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 50px;
 }
 
