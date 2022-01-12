@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/13d1bd394b.js" crossorigin="anonymous"></script>
     <title>Felipe Gaune</title>
 </head>
 <body>
+    <div id="side-menu">
+        <div class="close-container">
+            <i class="fa fa-times" aria-hidden="true" id="close"></i>
+        </div>
+        
+        <a>Novedades</a>
+        <a>Banda</a>
+        <a>Galería</a>
+        <a>Discografía</a>
+        <a>Contacto</a>
+    </div>
+    <!-- <div id="manto"></div> -->
     <div id="navbar-hero-wrapper">
         <!-- Navbar -->
         <div class="navbar">
@@ -15,12 +28,13 @@
                 <a href="#" id="logo">Felipe Gaune</a>
                 <nav>
                     <ul>
-                        <li><a href="#">Novedades</a></li>
-                        <li><a href="#">Historia</a></li>
-                        <li><a href="#">Discografía</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#" class="full-bar">Novedades</a></li>
+                        <li><a href="#" class="full-bar">Historia</a></li>
+                        <li><a href="#" class="full-bar">Discografía</a></li>
+                        <li><a href="#" class="full-bar">Contacto</a></li>
                     </ul>
                 </nav>
+                <i class="fas fa-bars" id='bars'></i>
             </div>
         </div>
         <!-- Hero Section -->
@@ -92,5 +106,6 @@
             
         </div>
     </section>
+    <script src="js/side-bar.js"></script>
 </body>
 </html>
