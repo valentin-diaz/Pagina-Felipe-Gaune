@@ -18,6 +18,11 @@ body {
     position: relative;
 }
 
+.sombra {
+    -webkit-box-shadow: 3px 4px 8px 5px rgba(0,0,0,0.29); 
+    box-shadow: 3px 4px 8px 5px rgba(0,0,0,0.29);
+}
+
 .mx1 {
     margin: 0 90px;
     /* border: 1px solid black; */
