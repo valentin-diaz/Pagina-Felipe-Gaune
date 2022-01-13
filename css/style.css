@@ -456,7 +456,23 @@ button:hover{
     text-transform: uppercase;
     /* position: relative; */
     padding-bottom: 6px;
+    /* width: 25%; */
+    /* border: 1px dashed red; */
+    padding-right: 0;
     /* border-bottom: 5px solid var(--color-1); */
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellow; */
+    width:fit-content;
+}
+
+.underline {
+    width: 48%;
+    height: 5px;
+    background-color: var(--color-1);
 }
 
 .texto {
@@ -748,6 +764,9 @@ button:hover{
         border-radius: 75px;
     }
 
+    .galeria-col .underline {
+        background-color: var(--color-2);
+    }
     .form-card {
         width: 100%;
     }
