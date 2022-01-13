@@ -752,6 +752,12 @@ button:hover{
         width: 100%;
     }
 
+    .submit-container {
+        display: flex;
+        /* width: 100%; */
+        justify-content: center;
+    }
+
     .discografia-container {
         grid-template-columns: 1fr 1fr;
         /* border: 1px solid black; */
