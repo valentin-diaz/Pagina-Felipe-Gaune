@@ -429,8 +429,38 @@ a{
     justify-items: flex-end;
     align-items: flex-end;
     width: 100%;
+    position: relative;
     /* border: 1px solid black; */
 }
+
+.img-container .link-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    /* filter: blur(1px); */
+}
+
+.img-container .link-container a {
+    color: #fff;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #fff;
+    transform: translateY(150%);
+    font-size: 32px;
+    transition: transform 0.3s ease;
+    /* transition-delay: 0.1s; */
+    
+}
+
+/* .img-container .link-container:hover {
+    background-color: pink;
+} */
 
 
 
