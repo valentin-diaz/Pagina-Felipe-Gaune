@@ -738,7 +738,7 @@ button:hover{
         margin-top: 0;
         margin-bottom: 50px;
         text-align: center;
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
         max-height: 80px;
     }
 
