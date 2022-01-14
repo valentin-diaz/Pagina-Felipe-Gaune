@@ -712,10 +712,12 @@ button:hover{
         grid-template-columns: 1fr;
         /* border: 3px dashed blue; */
         grid-gap: 20px;
+        margin-bottom: 200px;
     }
 
     #navbar-hero-wrapper {
         background-position: 0 0;
+        height: 550px;
     }
     
     .container-hero h1 {
@@ -736,6 +738,8 @@ button:hover{
         margin-top: 0;
         margin-bottom: 50px;
         text-align: center;
+        border: 1px solid yellow;
+        max-height: 80px;
     }
 
     .hero-btn-container {
