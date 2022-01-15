@@ -982,9 +982,12 @@ button:hover{
         font-size: 22px;
     }
 
-    .footer-nav-container ul li a,
-    .creditos-container p {
+    .footer-nav-container ul li a {
         font-size: 16px;
+    }
+
+    .creditos-container p {
+        font-size: 14px;
     }
 
     .logo-i {
