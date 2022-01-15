@@ -511,7 +511,7 @@ a{
 }
 
 
-.footer-titulo-container h1 {
+.footer-titulo-container a {
     color: white;
     font-size: 48px;
     font-weight: 700;
@@ -625,7 +625,8 @@ button:hover{
         height: 80px;
     }
 
-    .navbar li a {
+    .navbar li a,
+    .footer-nav-container ul li a {
         font-size: 20px;
     }
 
@@ -633,9 +634,15 @@ button:hover{
         font-size: 28px;
     }
 
+    .footer-titulo-container a {
+        font-size: 32px;
+    }
+
     .form-card {
         gap: 50px;
     }
+
+    
 }
 
 @media (max-width: 1030px) {
@@ -792,6 +799,51 @@ button:hover{
     #submit {
         margin-top: 16px;
     }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .footer-titulo-container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer-nav-container {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .footer-redes-container {
+        /* grid-column: 1 / span 2; */
+        grid-column: 1;
+        grid-row: 2;
+        /* border: 1px solid black; */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .creditos-container {
+        /* grid-column: 1 / span 2; */
+        grid-column: 2;
+        /* grid-row: 3; */
+        grid-row: 2;
+        /* border: 1px solid black; */
+        align-items: center;
+        display: flex;
+    }
+
+    /* .redes-container h2 {
+        text-align: center;
+    } */
+
+    .redes-container ul {
+        grid-column: 1 / span 3;
+        /* border: 2px dashed green; */
+        width: 100%;
+        /* justify-content: center; */
+    }
     .titulo {
         font-size: 32px;
     }
@@ -880,15 +932,6 @@ button:hover{
         background-color: var(--color-2);
     }
 
-    /* .galeria-col::before {
-        content: '';
-        position: absolute;
-        height: 100px;
-        width: 100%;
-        margin: 0;
-        background-color: var(--color-3);
-    } */
-
     #bg-galeria {
         display: block;
     }
@@ -932,6 +975,20 @@ button:hover{
 
     .img-container .link-container a {
         font-size: 18px;
+    }
+
+    .footer-nav-container h2,
+    .redes-container h2 {
+        font-size: 22px;
+    }
+
+    .footer-nav-container ul li a,
+    .creditos-container p {
+        font-size: 16px;
+    }
+
+    .logo-i {
+        font-size: 26px;
     }
 
     .sombra {
