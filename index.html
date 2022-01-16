@@ -14,11 +14,12 @@
             <i class="fa fa-times" aria-hidden="true" id="close"></i>
         </div>
         
-        <a>Novedades</a>
-        <a>Banda</a>
-        <a>Galería</a>
-        <a>Discografía</a>
-        <a>Contacto</a>
+        <a href="#">Novedades</a>
+        <a href="#">Historia</a>
+        <a href="#">Galería</a>
+        <a href="#">Miembros</a>
+        <a href="#">Discografía</a>
+        <a href="#">Contacto</a>
     </div>
     <!-- <div id="manto"></div> -->
     <div id="navbar-hero-wrapper">
@@ -29,7 +30,16 @@
                 <nav>
                     <ul>
                         <li><a href="#" class="full-bar">Novedades</a></li>
-                        <li><a href="#" class="full-bar">Historia</a></li>
+                        <li id="li-banda">
+                            <a href="#" class="full-bar">Banda</a>
+                            <div class="menu-desplegable">
+                                <ul>
+                                    <li><a href="#">Historia</a></li>
+                                    <li><a href="#">Galería</a></li>
+                                    <li><a href="#">Miembros</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="#" class="full-bar">Discografía</a></li>
                         <li><a href="#" class="full-bar">Contacto</a></li>
                     </ul>
@@ -161,6 +171,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/menu_desplegable.js"></script>
     <script src="js/side-bar.js"></script>
     <script src="js/album_links.js"></script>
     <!-- <script src="js/title_underline.js"></script> -->

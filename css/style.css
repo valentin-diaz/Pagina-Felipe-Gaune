@@ -164,6 +164,45 @@ a{
     text-decoration: none;
 }
 
+#li-banda {
+    position: relative;
+}
+
+.menu-desplegable {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: var(--color-1);
+    display: none;
+}
+
+.menu-desplegable ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-desplegable ul li {
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 20px 0;
+    /* border-bottom: 2px solid #fff; */
+    /* border-right: 2px solid #fff;  */
+    /* border-left: 2px solid #fff; */
+    border-top: 3px solid #fff;
+    /* text-align: center; */
+}
+
+
+
+.menu-desplegable ul li a {
+    /* border: 2px dashed blueviolet; */
+    width: 100%;
+    text-align: center;
+}
+
+
+
 #bars {
     font-size: 30px;
     display: none;
